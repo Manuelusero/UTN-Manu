@@ -1,0 +1,5 @@
+@import url("./button.css") /* Selector universal */ * {
+    background-color: aqua;
+}
+
+/* IMPORTANT mala practica */

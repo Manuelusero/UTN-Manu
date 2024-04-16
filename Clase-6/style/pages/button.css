@@ -1,0 +1,21 @@
+/* El selector de elementos */
+
+button {
+    color: tomato;
+}
+
+/* El selector de clases  */
+
+.especial {
+    color: blue;
+}
+
+.super-especial {
+    color: blueviolet;
+}
+
+/* El selector de Id */
+
+#btn-super-especial {
+    color: green;
+}
