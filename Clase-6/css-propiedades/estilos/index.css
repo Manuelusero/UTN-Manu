@@ -1,0 +1,10 @@
+@import url("./font.css");
+@import url("./variable.css");
+
+div {
+    background-color: aquamarine;
+}
+
+span {
+    background-color: royalblue;
+}

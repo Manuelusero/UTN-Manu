@@ -1,0 +1,12 @@
+@import url("./font.css");
+
+h1 {
+    color: rgb(146, 35, 35);
+    font-size: 50px;
+    text-decoration: underline blue wavy;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    line-height: 60px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
