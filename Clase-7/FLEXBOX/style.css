@@ -18,7 +18,7 @@
 }
 
 .padre .hijo {
-    background-color: red;
+    background-color: rgb(171, 43, 43);
     width: 200px;
     height: 300px;
     border: 1px solid black;
