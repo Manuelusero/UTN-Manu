@@ -1,0 +1,100 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&family=Titillium+Web:ital,wght@1,200&display=swap");
+
+:root {
+    --ff-text: "DM Sans", sans-serif;
+    --bg-color-primary: #673de6;
+    --bg-color-secundary: #5025d1;
+    --text-color: rgba(255, 255, 255, 0.958);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-text);
+    background-color: var(--bg-color-primary);
+}
+
+.contenedor {
+    min-height: 100vh;
+    width: 100%;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-weight: 400;
+    background-color: var(--bg-color-primary);
+}
+h2 {
+    font-size: 24px;
+    color: var(--text-color);
+    line-height: 32px;
+    text-align: start;
+    margin-bottom: 24px;
+}
+.textos .text {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: var(--ff-text);
+    color: var(--text-color);
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    text-align: start;
+    font-weight: 400;
+    max-width: 500px;
+}
+.girl {
+    width: 100%;
+    height: 208px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    max-width: 500px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.boxes .experience {
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 500px;
+    min-height: 200px;
+    padding: 35px 30px 45px;
+    color: var(--text-color);
+    background-color: var(--bg-color-secundary);
+    position: relative;
+}
+.experience a {
+    position: absolute;
+    font-size: 0.8em;
+    left: 90%;
+    top: 80%;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--bg-color-secundary);
+}
+.experience p {
+    padding: 15px 0;
+    max-width: 450px;
+    background-color: var(--bg-color-secundary);
+}
+.experience img {
+    background-color: var(--bg-color-secundary);
+    width: 100%;
+}
+
+@media  screen and (min-width: 800px){
+    .experience
+    
+}
