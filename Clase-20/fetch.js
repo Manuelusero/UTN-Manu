@@ -34,26 +34,26 @@ Una vez obtenido el JSON de esa direccion deberas renderizar todos los posts en 
 */
 
 
-const solicitarPost = async () => {
-    const respuesta = await fetch ('https://jsonplaceholder.typicode.com/posts', {
-        method: 'GET'
-})
-const resultado = await respuesta.json()
+// const solicitarPost = async () => {
+//     const respuesta = await fetch ('https://jsonplaceholder.typicode.com/posts', {
+//         method: 'GET'
+// })
+// const resultado = await respuesta.json()
 
-let renderizarPost = '' 
-for(const post of resultado){
-    renderizarPost = renderizarPost + `
-    <div>
-        <h3>${post.title}</h3>
-        <p>${post.body}</p>
-        <button>♥</button>
-    </div>
-`
-}
-document.getElementById('contenedorPost').innerHTML = renderizarPost 
+// let renderizarPost = '' 
+// for(const post of resultado){
+//     renderizarPost = renderizarPost + `
+//     <div>
+//         <h3>${post.title}</h3>
+//         <p>${post.body}</p>
+//         <button>♥</button>
+//     </div>
+// `
+// }
+// document.getElementById('contenedorPost').innerHTML = renderizarPost 
 
-}
-solicitarPost()
+// }
+// solicitarPost()
 
 
 
@@ -95,7 +95,7 @@ solicitarPost()
 //     event.preventDefault()
 
 // }
-// formHTML.addEventListenner('submit',  handleSubmit)
+// formHTML.addEventListener('submit',  handleSubmit)
 
 
 
