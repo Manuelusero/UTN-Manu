@@ -33,6 +33,7 @@ Una vez obtenido el JSON de esa direccion deberas renderizar todos los posts en 
 </div>
 */
 
+//RESOLUCION
 
 // const solicitarPost = async () => {
 //     const respuesta = await fetch ('https://jsonplaceholder.typicode.com/posts', {
@@ -54,10 +55,6 @@ Una vez obtenido el JSON de esa direccion deberas renderizar todos los posts en 
 
 // }
 // solicitarPost()
-
-
-
-
 
 
 
