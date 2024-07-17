@@ -1,0 +1,33 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px; /* Bordes redondeados para el contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    background-color: white;
+}
+
+.caja-colores {
+    display: flex;
+    flex-direction: column; /* Coloca las cajas de colores en columna */
+    border-radius: 15px; /* Bordes redondeados para las cajas de colores */
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+    margin-bottom: 10px;
+}
+
+.caja-color {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 50px; /* Ajusta el tamaño según sea necesario */
+}
+
+.info {
+    display: flex;
+    justify-content: space-between; /* Espacia uniformemente los elementos hijos */
+    width: 100%;
+}
+
+.info span {
+    margin-top: 5px; /* Espaciado entre las líneas de texto */
+}
