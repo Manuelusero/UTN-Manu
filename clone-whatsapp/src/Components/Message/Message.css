@@ -1,3 +1,38 @@
+.mensaje {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.mensaje-author {
+    font-weight: bold;
+}
+
+.mensaje-content {
+    margin: 5px 0;
+}
+
+.mensaje-fecha {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.mensaje-estado {
+    font-size: 0.8em;
+}
+
+.mensaje-estado.visto {
+    color: green;
+}
+
+.mensaje-estado.entregado {
+    color: orange;
+}
+
+.mensaje-estado.no_entregado {
+    color: red;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #d85b5b;
@@ -10,7 +45,7 @@ body {
 }
 
 .App {
-    background-image: url(./Images/fondooscuro.jpeg);
+    background-image: url(/src/assets/Images/fondooscuro.jpeg);
     padding: 20px;
     padding-top: 90px;
     border-radius: 10px;

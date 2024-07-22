@@ -59,7 +59,8 @@ const generateAutoReply = (incomingMessage) => {
 }
   return (
     <div className="App">
-      <h1>Chat</h1>
+      <div className='imgPerfil'></div>
+      <h1>Messi</h1>
       <div className="chat">
         {message.map(mensaje => (
           <Mensaje
