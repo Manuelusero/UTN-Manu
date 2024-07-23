@@ -1,20 +1,23 @@
 import React from 'react';
 import './Message.css'
 
-const Message = ({ messages }) => {
+const Message = ({ author, content, date, status }) => {
+    const classMessage = author === 'yo' ? 'message-right' : 'message-left';
+    const statusMessage = status === 'visto'
+
     return (
-        <div className="chat">
-            {messages.map((mensaje) => (
-                <div key={mensaje.id} className="mensaje">
-                    <div className="mensaje-author">{mensaje.author}</div>
-                    <div className="mensaje-content">{mensaje.content}</div>
-                    <div className="mensaje-fecha">{mensaje.fecha}</div>
-                    <div className="mensaje-estado">{mensaje.estado}</div>
-                </div>
-            ))}
+        <div className={`message ${classMessage}`}>
+            <span className="author">{author}</span>
+            <p className="content">{content}</p>
+            <span className="date">{date}</span>
+            <span className={classMessage}>
+                <i className={statusMessage === 'no entregado' ? "bi bi-check" : "bi bi-check-all"}></i>
+            </span>
         </div>
     );
-};
+}
+
+
 
 export default Message;
 
@@ -24,8 +27,8 @@ export default Message;
 //         <div className="mensaje">
 //             <div className="mensaje-author">{props.author}</div>
 //             <div className="mensaje-content">{props.content}</div>
-//             <div className="mensaje-fecha">{props.fecha}</div>
-//             <div className={`mensaje-estado ${props.estado}`}>{props.estado}</div>
+//             <div className="mensaje-date">{props.date}</div>
+//             <div className={`mensaje-status ${props.status}`}>{props.status}</div>
 //         </div>
 //     );
 // }

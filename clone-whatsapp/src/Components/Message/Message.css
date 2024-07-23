@@ -1,39 +1,4 @@
-.mensaje {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-}
-
-.mensaje-author {
-    font-weight: bold;
-}
-
-.mensaje-content {
-    margin: 5px 0;
-}
-
-.mensaje-fecha {
-    font-size: 0.8em;
-    color: gray;
-}
-
-.mensaje-estado {
-    font-size: 0.8em;
-}
-
-.mensaje-estado.visto {
-    color: green;
-}
-
-.mensaje-estado.entregado {
-    color: orange;
-}
-
-.mensaje-estado.no_entregado {
-    color: red;
-}
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #d85b5b;
     margin: 0;
@@ -42,9 +7,63 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+} */
+
+/*ESTILOS DE LOS MENSAJES*/
+
+.message {
+    width: 60%;
+    margin-bottom: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: #ebe3e3;
 }
 
-.App {
+.message .author {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.message .content {
+    margin-top: 20px;
+    color: rgb(244, 238, 238);
+    max-height: 60vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.message .date,
+.message .status {
+    font-size: 11px;
+    color: #888;
+    position: absolute;
+    bottom: 2px;
+    right: 20px;
+}
+
+.message .status {
+    bottom: 1px;
+    right: 5px;
+}
+
+.message .message-left {
+    background-color: #cccccc;
+    float: left;
+    border-bottom-left-radius: 0px;
+    color: white;
+}
+
+.message .message-right {
+    background-color: #c6c4ce;
+    float: right;
+    border-bottom-right-radius: 0px;
+}
+
+/* .content-message {
     background-image: url(/src/assets/Images/fondooscuro.jpeg);
     padding: 20px;
     padding-top: 90px;
@@ -52,16 +71,16 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     position: relative;
-}
+} */
 
-.chat {
+/* .content-message {
     margin-top: 20px;
     color: gray;
     max-height: 60vh;
     overflow-y: auto;
-}
+} */
 
-h1 {
+/* h1 {
     background-color: rgb(10, 10, 10);
     border-radius: 2px, 0px, 2px, 0;
     height: 50px;
@@ -73,9 +92,4 @@ h1 {
     margin: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
-
-.imgPerfil {
-    background-image: url(./Images/icononoguardado.avif);
-    border-radius: 50%;
-}
+} */
